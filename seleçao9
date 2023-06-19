@@ -1,0 +1,30 @@
+import (
+	"fmt"
+)
+
+func main(){
+var numP, numQ, numR float64
+	fmt.Println("Digite três números reais:")
+	fmt.Scanln(&numP)
+	fmt.Scanln(&numQ)
+	fmt.Scanln(&numR)
+	if numP <= numQ && numP <= numR {
+		if numQ <= numR {
+			fmt.Println("Ordem crescente:", numP, numQ, numR)
+		} else {
+			fmt.Println("Ordem crescente:", numP, numR, numQ)
+		}
+	} else if numQ <= numP && numQ <= numR {
+		if numP <= numR {
+			fmt.Println("Ordem crescente:", numQ, numP, numR)
+		} else {
+			fmt.Println("Ordem crescente:", numQ, numR, numP)
+		}
+	} else {
+		if numP <= numQ {
+			fmt.Println("Ordem crescente:", numR, numP, numQ)
+		} else {
+			fmt.Println("Ordem crescente:", numR, numQ, numP)
+		}
+	}
+  }
