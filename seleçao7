@@ -1,0 +1,16 @@
+import (
+	"fmt"
+)
+
+func main(){
+var salario float64
+	fmt.Println("Digite o salário atual:")
+	fmt.Scanln(&salario)
+	if salario < 1000.0 {
+		novoSalario := salario * 1.10 // Aumento de 10%
+		fmt.Println("Novo salário:", novoSalario)
+	} else {
+		novoSalario := salario * 1.05 // Aumento de 5%
+		fmt.Println("Novo salário:", novoSalario)
+	}
+  }
