@@ -1,0 +1,18 @@
+import (
+	"fmt"
+)
+
+func main(){
+var numA, numB, numC int
+	fmt.Println("Digite três números inteiros:")
+	fmt.Scanln(&numA)
+	fmt.Scanln(&numB)
+	fmt.Scanln(&numC)
+	if numA < numB && numA < numC {
+		fmt.Println("O menor número é:", numA)
+	} else if numB < numC {
+		fmt.Println("O menor número é:", numB)
+	} else {
+		fmt.Println("O menor número é:", numC)
+	}
+  }
