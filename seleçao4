@@ -1,0 +1,28 @@
+import (
+	"fmt"
+)
+
+func main(){
+var altura float64
+	var sexo string
+	fmt.Println("Digite a altura (em metros):")
+	fmt.Scanln(&altura)
+	fmt.Println("Digite o sexo (M/F):")
+	fmt.Scanln(&sexo)
+
+	pesoIdeal := 0.0
+	if sexo == "M" {
+		pesoIdeal = (72.7 * altura) - 58
+	} else if sexo == "F" {
+		pesoIdeal = (62.1 * altura) - 44.7
+	}
+
+	fmt.Println("O peso ideal é:", pesoIdeal)
+	if pesoIdeal-2 < pesoIdeal && pesoIdeal < pesoIdeal+2 {
+		fmt.Println("Dentro do peso ideal.")
+	} else if pesoIdeal < pesoIdeal-2 {
+		fmt.Println("Abaixo do peso ideal.")
+	} else {
+		fmt.Println("Acima do peso ideal.")
+	}
+  }
