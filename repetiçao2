@@ -1,0 +1,10 @@
+import (
+	"fmt"
+)
+
+func main(){
+fmt.Println("Números pares de 0 a 20:")
+	for i := 0; i <= 20; i += 2 {
+		fmt.Println(i)
+	}
+  }
