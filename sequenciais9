@@ -1,0 +1,12 @@
+import (
+	"fmt"
+)
+
+func main(){
+var precoProduto float64
+	fmt.Println("Digite o preço do produto:")
+	fmt.Scanln(&precoProduto)
+	desconto := precoProduto * 0.10
+	valorComDesconto := precoProduto - desconto
+	fmt.Println("Valor com desconto:", valorComDesconto)
+}
