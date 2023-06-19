@@ -1,0 +1,13 @@
+import (
+	"fmt"
+)
+
+func main(){
+var numA, numB, numC float64
+	fmt.Println("Digite três números reais:")
+	fmt.Scanln(&numA)
+	fmt.Scanln(&numB)
+	fmt.Scanln(&numC)
+	mediaPonderada := (numA*2 + numB*3 + numC*5) / 10
+	fmt.Println("Média ponderada:", mediaPonderada)
+  }
