@@ -1,0 +1,12 @@
+import (
+	"fmt"
+)
+
+func main(){
+var salario float64
+	fmt.Println("Digite o salário atual:")
+	fmt.Scanln(&salario)
+	aumento := salario * 0.15
+	novoSalario := salario + aumento
+	fmt.Println("Novo salário:", novoSalario)
+  }
