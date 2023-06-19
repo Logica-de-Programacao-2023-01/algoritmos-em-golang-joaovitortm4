@@ -1,0 +1,13 @@
+import (
+	"fmt"
+)
+
+func main(){
+var numeroInteiro int
+	fmt.Println("Digite um número inteiro:")
+	fmt.Scanln(&numeroInteiro)
+	sucessor := numeroInteiro + 1
+	antecessor := numeroInteiro - 1
+	fmt.Println("Sucessor:", sucessor)
+	fmt.Println("Antecessor:", antecessor)
+  }
