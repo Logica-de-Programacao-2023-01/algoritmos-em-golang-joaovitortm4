@@ -1,0 +1,24 @@
+import (
+	"fmt"
+)
+
+func main(){
+fmt.Println("Digite vários números inteiros (digite 0 para parar):")
+	maior := 0
+	for {
+		var num int
+		fmt.Scanln(&num)
+		if num == 0 {
+			break
+		}
+		if num > maior {
+			maior = num
+		}
+	}
+	if maior != 0 {
+		fmt.Println("O maior número digitado é:", maior)
+	} else {
+		fmt.Println("Nenhum número válido foi digitado.")
+	}
+}
+}
