@@ -1,0 +1,17 @@
+import (
+	"fmt"
+)
+
+func main(){
+var numX, numY int
+	fmt.Println("Digite dois números inteiros:")
+	fmt.Scanln(&numX)
+	fmt.Scanln(&numY)
+	if numX >= 0 && numY >= 0 {
+		resultado := numX * numY
+		fmt.Println("Resultado da multiplicação:", resultado)
+	} else {
+		resultado := numX + numY
+		fmt.Println("Resultado da soma:", resultado)
+	}
+  }
